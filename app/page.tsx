@@ -1,3 +1,5 @@
+// app/page.tsx
+
 import { HeroSection } from "@/components/landing/hero-section"
 import { FeaturesSection } from "@/components/landing/features-section"
 import { StatsSection } from "@/components/landing/stats-section"

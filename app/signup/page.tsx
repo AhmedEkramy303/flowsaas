@@ -4,8 +4,6 @@ import { signIn } from "next-auth/react"
 import { SignupForm } from "@/components/auth/signup-form"
 import Link from "next/link"
 
-
-
 export default function SignupPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-muted/30 px-4 py-12">
@@ -43,10 +41,7 @@ export default function SignupPage() {
 
         <p className="text-center text-sm text-muted-foreground mt-6">
           Already have an account?{" "}
-          <Link
-            href="/login"
-            className="text-primary hover:underline font-medium"
-          >
+          <Link href="/login" className="text-primary hover:underline font-medium">
             Sign in
           </Link>
         </p>

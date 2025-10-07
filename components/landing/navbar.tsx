@@ -44,16 +44,28 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden md:flex items-center gap-8 mx-auto">
-            <Link href="#features" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
+            <Link
+              href="#features"
+              className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+            >
               Features
             </Link>
-            <Link href="#pricing" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
+            <Link
+              href="#pricing"
+              className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+            >
               Pricing
             </Link>
-            <Link href="#testimonials" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
+            <Link
+              href="#testimonials"
+              className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+            >
               Testimonials
             </Link>
-            <Link href="#faq" className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
+            <Link
+              href="#faq"
+              className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+            >
               FAQ
             </Link>
           </div>
@@ -69,7 +81,10 @@ export default function Navbar() {
               </button>
             )}
             {session ? (
-              <button onClick={() => signOut()} className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
+              <button
+                onClick={() => signOut()}
+                className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+              >
                 Log out
               </button>
             ) : (
@@ -94,8 +109,16 @@ export default function Navbar() {
                 {resolvedTheme === "dark" ? "🌞" : "🌙"}
               </button>
             )}
-            <button className="p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle menu">
-              {isMobileMenuOpen ? <X className="h-6 w-6 text-gray-900 dark:text-white" /> : <Menu className="h-6 w-6 text-gray-900 dark:text-white" />}
+            <button
+              className="p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6 text-gray-900 dark:text-white" />
+              ) : (
+                <Menu className="h-6 w-6 text-gray-900 dark:text-white" />
+              )}
             </button>
           </div>
         </div>
@@ -122,7 +145,13 @@ export default function Navbar() {
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-gray-200 dark:border-gray-700">
                 {session ? (
-                  <button onClick={() => { signOut(); setIsMobileMenuOpen(false) }} className="w-full text-left text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">
+                  <button
+                    onClick={() => {
+                      signOut()
+                      setIsMobileMenuOpen(false)
+                    }}
+                    className="w-full text-left text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+                  >
                     Log out
                   </button>
                 ) : (

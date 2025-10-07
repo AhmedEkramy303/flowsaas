@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { Github, Twitter, Linkedin } from "lucide-react"
 
@@ -9,69 +11,152 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-foreground mb-4">Product</h3>
             <ul className="space-y-2">
-              {[
-                { href: "#features", label: "Features" },
-                { href: "#pricing", label: "Pricing" },
-                { href: "#integrations", label: "Integrations" },
-                { href: "#changelog", label: "Changelog" },
-              ].map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="#features"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Features
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#pricing"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#integrations"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Integrations
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#changelog"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Changelog
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold text-foreground mb-4">Company</h3>
             <ul className="space-y-2">
-              {["About", "Blog", "Careers", "Press"].map((label) => (
-                <li key={label}>
-                  <Link
-                    href={`#${label.toLowerCase()}`}
-                    className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="#about"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#blog"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#careers"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#press"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Press
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold text-foreground mb-4">Resources</h3>
             <ul className="space-y-2">
-              {["Documentation", "API Reference", "Support", "Status"].map((label) => (
-                <li key={label}>
-                  <Link
-                    href={`#${label.toLowerCase().replace(" ", "-")}`}
-                    className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="#documentation"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Documentation
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#api-reference"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  API Reference
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#support"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Support
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#status"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Status
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold text-foreground mb-4">Legal</h3>
             <ul className="space-y-2">
-              {["Privacy", "Terms", "Security", "Cookies"].map((label) => (
-                <li key={label}>
-                  <Link
-                    href={`#${label.toLowerCase()}`}
-                    className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="#privacy"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Privacy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#terms"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Terms
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#security"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Security
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#cookies"
+                  className="text-sm text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+                >
+                  Cookies
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -81,20 +166,30 @@ export default function Footer() {
             © {new Date().getFullYear()} FlowSaaS. All rights reserved.
           </div>
           <div className="flex items-center gap-4">
-            {[{ icon: Twitter, href: "https://twitter.com" },
-              { icon: Github, href: "https://github.com" },
-              { icon: Linkedin, href: "https://linkedin.com" }
-            ].map((item, idx) => (
-              <Link
-                key={idx}
-                href={item.href}
-                className="text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <item.icon className="h-5 w-5" />
-              </Link>
-            ))}
+            <Link
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+            >
+              <Twitter className="h-5 w-5" />
+            </Link>
+            <Link
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+            >
+              <Github className="h-5 w-5" />
+            </Link>
+            <Link
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground dark:text-gray-400 hover:text-foreground dark:hover:text-white transition-colors"
+            >
+              <Linkedin className="h-5 w-5" />
+            </Link>
           </div>
         </div>
       </div>
