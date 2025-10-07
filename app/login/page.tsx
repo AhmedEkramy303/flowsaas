@@ -23,13 +23,19 @@ export default function LoginPage() {
         {/* OAuth Buttons */}
         <div className="flex flex-col gap-4 mb-6">
           <button
-            onClick={() => signIn("github", { callbackUrl: "/" })}
+            onClick={() => {
+              console.log("GitHub clicked")
+              signIn("github", { callbackUrl: "/" })
+            }}
             className="w-full flex items-center justify-center gap-2 px-4 py-2 border rounded hover:bg-gray-100"
           >
             Continue with GitHub
           </button>
           <button
-            onClick={() => signIn("google", { callbackUrl: "/" })}
+            onClick={() => {
+              console.log("Google clicked")
+              signIn("google", { callbackUrl: "/" })
+            }}
             className="w-full flex items-center justify-center gap-2 px-4 py-2 border rounded hover:bg-gray-100"
           >
             Continue with Google
