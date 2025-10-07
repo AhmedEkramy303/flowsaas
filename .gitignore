@@ -4,3 +4,4 @@ package-lock.json
 pnpm-lock.yaml
 structure.txt
 components.json
+.env.local
